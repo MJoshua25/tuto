@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f985dc42-277c-4094-8b03-84f293c9c3ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photomedia/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photomedia/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/templates/pages/single-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/templates/pages/single-blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photomedia/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,42 +94,54 @@
       <updated>1586027729163</updated>
       <workItem from="1586027735758" duration="2939000" />
       <workItem from="1586093640356" duration="2226000" />
-      <workItem from="1586286580603" duration="1162000" />
+      <workItem from="1586286580603" duration="2346000" />
     </task>
+    <task id="LOCAL-00001" summary="Avancé dans le Tuto">
+      <created>1586287878724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586287878724</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Avancé dans le Tuto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avancé dans le Tuto" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="84" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586030063951">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="84" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586030063951" />
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1586287852225">
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1586287877112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586287852225" />
+    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586287877112" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1586028246220">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586028246220" />
-    <state width="1556" height="202" key="GridCell.Tab.0.bottom" timestamp="1586034263644">
+    <state width="1556" height="202" key="GridCell.Tab.0.bottom" timestamp="1586288577006">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586034263644" />
-    <state width="1556" height="202" key="GridCell.Tab.0.center" timestamp="1586034263644">
+    <state width="1556" height="202" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577006" />
+    <state width="1556" height="202" key="GridCell.Tab.0.center" timestamp="1586288577005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586034263644" />
-    <state width="1556" height="202" key="GridCell.Tab.0.left" timestamp="1586034263643">
+    <state width="1556" height="202" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577005" />
+    <state width="1556" height="202" key="GridCell.Tab.0.left" timestamp="1586288577005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586034263643" />
-    <state width="1556" height="202" key="GridCell.Tab.0.right" timestamp="1586034263644">
+    <state width="1556" height="202" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577005" />
+    <state width="1556" height="202" key="GridCell.Tab.0.right" timestamp="1586288577006">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586034263644" />
+    <state width="1556" height="202" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577006" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1586028290390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
