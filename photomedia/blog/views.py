@@ -16,3 +16,15 @@ def index(request: HttpRequest) -> HttpResponse:
 # TODO: about, category Paul
 
 # TODO: contact, single-blog Daouda
+
+def single(request: HttpRequest) -> HttpResponse:
+    data = {
+
+    }
+    return render(request, 'pages/single-blog.html', data)
+
+def contact(request: HttpRequest) -> HttpResponse:
+    data = {
+
+    }
+    return render(request, 'pages/contact.html', data)
