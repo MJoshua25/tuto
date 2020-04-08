@@ -56,15 +56,36 @@ class TagAdmin(admin.ModelAdmin):
         'date_add',
         'date_update',
     )
-    search_fields = (
-        'titre',
-    )
-    list_per_pages = 50
-    date_hierarchy = 'date_add'
-    #readonly_fields = ['affiche_image']
 
-    fieldsets = [
-        ('Info ', {'fields': ['titre', ]}),
-        #('Image', {'fields': ['cover', 'affiche_image']}),
-        ('Status et Activations', {'fields': ['status', ]}),
-    ]
+
+class ProfileAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'user',
+        'contacts',
+        'birth_date',
+        'genre',
+        'status',
+        'date_up',
+        'date_add',
+    )
+    list_filter = (
+        'status',
+        'date_up',
+        'date_add',
+    )
+
+class CommentaireAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'pseudo',
+        'message',
+        'status',
+        'date_add',
+    )
+
+    list_filter = (
+        'status',
+        'date_up',
+        'message'
+    )

@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
 
 # Create your models here.
 
@@ -39,7 +42,10 @@ class Tag(models.Model):
 class Commentaire(models.Model):
 
     message=models.CharField(max_length=254)
-    pseudo=models.ForeignKey(Profil,on_delete=models.CASCADE)
+    pseudo=models.ForeignKey(Profile,on_delete=models.CASCADE)
+    date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    status = models.BooleanField(default=True, null=True, blank=True)
+
 
     class Meta:
         verbose_name = "Tag"
@@ -50,7 +56,7 @@ class Commentaire(models.Model):
 
 
 
-class Profil(models.Model):
+class Profile(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     contacts = models.CharField(max_length=30, null=True, blank=True)
@@ -68,7 +74,7 @@ class Profil(models.Model):
 
     def __str__(self):
         return str(self.user.username)
-    
+
 
 
 class Article(models.Model):
