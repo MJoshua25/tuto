@@ -68,3 +68,31 @@ class TagAdmin(admin.ModelAdmin):
         #('Image', {'fields': ['cover', 'affiche_image']}),
         ('Status et Activations', {'fields': ['status', ]}),
     ]
+
+
+class ArticleAdmin(admin.ModelAdmin):
+    
+    list_display = (
+        'titre',
+        'affiche_image',
+        'status',
+        'date_add',
+        'date_update'
+    )
+    list_filter = (
+        'status',
+        'date_add',
+        'date_update',
+    )
+    search_fields = (
+        'titre',
+    )
+    list_per_pages = 50
+    date_hierarchy = 'date_add'
+    #readonly_fields = ['affiche_image']
+
+    fieldsets = [
+        ('Info ', {'fields': ['titre', ]}),
+        #('Image', {'fields': ['cover', 'affiche_image']}),
+        ('Status et Activations', {'fields': ['status', ]}),
+    ]
