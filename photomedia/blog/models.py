@@ -68,3 +68,19 @@ class Profil(models.Model):
 
     def __str__(self):
         return str(self.user.username)
+    
+
+
+class Article(models.Model):
+    titre = models.CharField(max_length=50)
+
+
+
+
+    class Meta:
+        verbose_name = "Article"
+        verbose_name_plural = "Articles"
+
+    def __str__(self) -> str:
+        return str(self.titre)
+
