@@ -63,11 +63,7 @@ class TagAdmin(admin.ModelAdmin):
     date_hierarchy = 'date_add'
     #readonly_fields = ['affiche_image']
 
-    fieldsets = [
-        ('Info ', {'fields': ['titre', ]}),
-        #('Image', {'fields': ['cover', 'affiche_image']}),
-        ('Status et Activations', {'fields': ['status', ]}),
-    ]
+    
 
 
 class ArticleAdmin(admin.ModelAdmin):
