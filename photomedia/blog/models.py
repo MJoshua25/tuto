@@ -79,8 +79,11 @@ class Profile(models.Model):
 
 class Article(models.Model):
     titre = models.CharField(max_length=50)
-
-
+    cover = models.ImageField(upload_to='articles')
+    status = models.BooleanField(default=True)
+    date_add = models.DateTimeField(auto_now_add=True)
+    date_update = models.DateTimeField(auto_now=True)
+    
 
 
     class Meta:

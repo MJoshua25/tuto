@@ -28,3 +28,16 @@ def contact(request: HttpRequest) -> HttpResponse:
 
     }
     return render(request, 'pages/contact.html', data)
+
+def about(request: HttpRequest) -> HttpResponse:
+    data = {
+
+    }
+    return render(request, 'pages/about.html', data)
+
+
+def category(request: HttpRequest) -> HttpResponse:
+    data = {
+
+    }
+    return render(request, 'pages/category.html', data)
