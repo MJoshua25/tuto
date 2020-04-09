@@ -40,7 +40,7 @@ class Tag(models.Model):
 # TODO: commentaire Daouda, admin Tag
 
 class Commentaire(models.Model):
-
+    
     message=models.CharField(max_length=254)
     pseudo=models.ForeignKey(Profile,on_delete=models.CASCADE)
     date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
