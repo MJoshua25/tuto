@@ -39,29 +39,16 @@ class Tag(models.Model):
 
 # TODO: commentaire Daouda, admin Tag
 
-class Commentaire(models.Model):
-    
-    message=models.CharField(max_length=254)
-    pseudo=models.ForeignKey(Profile,on_delete=models.CASCADE)
-    date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    status = models.BooleanField(default=True, null=True, blank=True)
-
-
-    class Meta:
-        verbose_name = "Tag"
-        verbose_name_plural = "Tags"
-
-    def __str__(self) -> str:
-        return '{}  -  {}' .format(self.pseudo,self.message)
-
-
 
 class Profile(models.Model):
-
+    
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     contacts = models.CharField(max_length=30, null=True, blank=True)
     birth_date = models.DateField(null=True)
     genre = models.CharField(max_length=30, null=True)
+    date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    date_upd = models.DateTimeField(auto_now=True, null=True, blank=True)
+    status = models.BooleanField(default=True, null=True, blank=True)
 
     @receiver(post_save, sender=User)
     def create_user_profile(sender, instance, created, **kwargs):
@@ -76,6 +63,21 @@ class Profile(models.Model):
         return str(self.user.username)
 
 
+
+class Commentaire(models.Model):
+    
+    message=models.CharField(max_length=254)
+    pseudo=models.ForeignKey(Profile,on_delete=models.CASCADE)
+    date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    status = models.BooleanField(default=True, null=True, blank=True)
+
+
+    class Meta:
+        verbose_name = "Commentaire"
+        verbose_name_plural = "Commentaires"
+
+    def __str__(self) -> str:
+        return '{}  -  {}' .format(self.pseudo,self.message)
 
 class Article(models.Model):
     titre = models.CharField(max_length=50)
@@ -92,4 +94,7 @@ class Article(models.Model):
 
     def __str__(self) -> str:
         return str(self.titre)
+
+
+
 

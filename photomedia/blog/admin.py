@@ -49,15 +49,20 @@ class TagAdmin(admin.ModelAdmin):
         'titre',
         'status',
         'date_add',
-        'date_update'
+        'date_upd'
     )
     list_filter = (
         'status',
         'date_add',
-        'date_update',
+        'date_upd',
     )
+    
+
+def _register(model, admin_class):
+    admin.site.register(model, admin_class)
 
 
+_register(models.Tag, TagAdmin)
 class ProfileAdmin(admin.ModelAdmin):
 
     list_display = (
@@ -66,14 +71,20 @@ class ProfileAdmin(admin.ModelAdmin):
         'birth_date',
         'genre',
         'status',
-        'date_up',
+        'date_upd',
         'date_add',
     )
     list_filter = (
         'status',
-        'date_up',
+        'date_upd',
         'date_add',
     )
+    
+def _register(model, admin_class):
+    admin.site.register(model, admin_class)
+
+
+_register(models.Profile, ProfileAdmin)
 
 class CommentaireAdmin(admin.ModelAdmin):
 
@@ -86,10 +97,15 @@ class CommentaireAdmin(admin.ModelAdmin):
 
     list_filter = (
         'status',
-        'date_up',
-        'message'
+        'date_add',
+        'message',
     )
+    
+def _register(model, admin_class):
+    admin.site.register(model, admin_class)
 
+
+_register(models.Commentaire, CommentaireAdmin)
 
 
 
@@ -121,3 +137,9 @@ class ArticleAdmin(admin.ModelAdmin):
     ]
     def affiche_image(self, obj):
         return mark_safe('<img src="{url}" width="100px" height="50px" />'.format(url=obj.cover.url))
+    
+def _register(model, admin_class):
+    admin.site.register(model, admin_class)
+
+
+_register(models.Article, ArticleAdmin)
