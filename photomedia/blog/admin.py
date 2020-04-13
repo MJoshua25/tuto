@@ -70,15 +70,20 @@ class ProfileAdmin(admin.ModelAdmin):
         'contacts',
         'birth_date',
         'genre',
-        'status',
-        'date_upd',
         'date_add',
+        'date_upd',
+        'status',
+        
     )
     list_filter = (
         'status',
         'date_upd',
         'date_add',
     )
+    search_fields = (
+        'user',
+    )
+    fields=('user','contacts','birth_date','genre','status','date_upd','date_add',)
     
 def _register(model, admin_class):
     admin.site.register(model, admin_class)
@@ -89,8 +94,8 @@ _register(models.Profile, ProfileAdmin)
 class CommentaireAdmin(admin.ModelAdmin):
 
     list_display = (
-        'pseudo',
         'message',
+        'pseudo',
         'status',
         'date_add',
     )
@@ -100,7 +105,10 @@ class CommentaireAdmin(admin.ModelAdmin):
         'date_add',
         'message',
     )
-    
+    search_fields = (
+        'pseudo',
+    )
+    fields=('message','pseudo','status','date_upd',)
 def _register(model, admin_class):
     admin.site.register(model, admin_class)
 
