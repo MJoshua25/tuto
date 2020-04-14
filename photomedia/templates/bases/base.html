@@ -56,7 +56,13 @@
                         </div>
                         <div class="col-xl-4 col-md-4 d-none d-md-block">
                             <div class="login_resiter">
-                                <p><a href="#"><i class="flaticon-user"></i>login</a> | <a href="#">Resister</a></p>
+                            {% if user.is_authenticated %}
+                                <p><a href="{% url 'logout' %}"><i class="flaticon-user"></i>logout</a>
+
+                                {% else %}
+                                <p><a href="{% url 'login_url' %}"><i class="flaticon-user"></i>login</a> | 
+                                <p><a href="{% url 'register_url' %}"><i class="flaticon-user"></i>Register</a> | 
+                            {% endif %}
                             </div>
                         </div>
                     </div>
