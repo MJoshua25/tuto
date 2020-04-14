@@ -155,7 +155,7 @@ TINYMCE_DEFAULT_CONFIG = {
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-LOGIN_REDIRECT_URL='/pages/dashboard/'
+REDIRECT_URL='/pages/dashboard/'
 FILEBROWSER_DIRECTORY = ''
 DIRECTORY = ''
 
