@@ -60,8 +60,7 @@
                                 <p><a href="{% url 'logout' %}"><i class="flaticon-user"></i>logout</a>
 
                                 {% else %}
-                                <p><a href="{% url 'login_url' %}"><i class="flaticon-user"></i>login</a> | 
-                                <p><a href="{% url 'register_url' %}"><i class="flaticon-user"></i>Register</a> | 
+                                <p><a href="{% url 'login_url' %}"><i class="flaticon-user"></i>login</a>|<a href="{% url 'register_url' %}"><i class="flaticon-user"></i>Register</a> | 
                             {% endif %}
                             </div>
                         </div>
@@ -76,7 +75,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="base.html">Home</a></li>
-                                        <li><a href="category.html">catagory</a></li>
+                                        <li><a href="category.html">category</a></li>
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
