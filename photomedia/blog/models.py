@@ -87,9 +87,9 @@ class Commentaire(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='commentaires')
     message = models.TextField()
     nom = models.CharField(max_length=255, null=True, blank=True)
-    email = models.EmailField()
-    website = models.URLField()
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='commentaires' , blank=True, null=True)
+    email = models.EmailField(null=True, blank=True)
+    website = models.URLField(null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='commentaires', blank=True, null=True)
 
     status = models.BooleanField(default=True)
     date_add = models.DateTimeField(auto_now_add=True)

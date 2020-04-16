@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f985dc42-277c-4094-8b03-84f293c9c3ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/photomedia/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photomedia/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +92,7 @@
       <workItem from="1586027735758" duration="2939000" />
       <workItem from="1586093640356" duration="2226000" />
       <workItem from="1586286580603" duration="2346000" />
-      <workItem from="1587045723988" duration="1991000" />
+      <workItem from="1587045723988" duration="2504000" />
     </task>
     <task id="LOCAL-00001" summary="Avancé dans le Tuto">
       <created>1586287878724</created>
@@ -107,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587049039726</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Avancé dans le Tuto">
+      <created>1587049214260</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587049214260</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,30 +130,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="84" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586030063951" />
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1586287877112">
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1587049212447">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586287877112" />
+    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049212447" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1586028246220">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586028246220" />
-    <state width="1556" height="202" key="GridCell.Tab.0.bottom" timestamp="1586288577006">
+    <state width="1557" height="216" key="GridCell.Tab.0.bottom" timestamp="1587049218720">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577006" />
-    <state width="1556" height="202" key="GridCell.Tab.0.center" timestamp="1586288577005">
+    <state width="1557" height="216" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049218720" />
+    <state width="1557" height="216" key="GridCell.Tab.0.center" timestamp="1587049218720">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577005" />
-    <state width="1556" height="202" key="GridCell.Tab.0.left" timestamp="1586288577005">
+    <state width="1557" height="216" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049218720" />
+    <state width="1557" height="216" key="GridCell.Tab.0.left" timestamp="1587049218719">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577005" />
-    <state width="1556" height="202" key="GridCell.Tab.0.right" timestamp="1586288577006">
+    <state width="1557" height="216" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049218719" />
+    <state width="1557" height="216" key="GridCell.Tab.0.right" timestamp="1587049218720">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1556" height="202" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586288577006" />
+    <state width="1557" height="216" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049218720" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1586028290390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
