@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f985dc42-277c-4094-8b03-84f293c9c3ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photomedia/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/templates/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photomedia/templates/pages/single-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/templates/pages/single-blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +92,7 @@
       <workItem from="1586027735758" duration="2939000" />
       <workItem from="1586093640356" duration="2226000" />
       <workItem from="1586286580603" duration="2346000" />
-      <workItem from="1587045723988" duration="5087000" />
+      <workItem from="1587045723988" duration="5532000" />
     </task>
     <task id="LOCAL-00001" summary="Avancé dans le Tuto">
       <created>1586287878724</created>
@@ -134,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587049912895</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Avancé dans le Tuto">
+      <created>1587053144552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587053144552</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,10 +151,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="84" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586030063951" />
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1587049911161">
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1587053142918">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049911161" />
+    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587053142918" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1586028246220">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

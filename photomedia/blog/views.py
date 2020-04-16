@@ -23,7 +23,7 @@ def index(request: HttpRequest) -> HttpResponse:
 
 def single(request: HttpRequest, titre_slug: str) -> HttpResponse:
     data = {
-
+        'single_article': models.Article.objects.filter(status=True, titre_slug=titre_slug)[:1].get()
     }
     return render(request, 'pages/single-blog.html', data)
 
