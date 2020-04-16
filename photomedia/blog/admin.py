@@ -68,7 +68,7 @@ class ProfileAdmin(admin.ModelAdmin):
     search_fields = (
         'user',
     )
-    fields = ('user', 'contacts', 'birth_date', 'genre', 'status', 'date_upd', 'date_add',)
+    fields = ('user', 'contacts', 'birth_date', 'genre', 'status')
 
 
 class CommentaireAdmin(admin.ModelAdmin):
@@ -126,7 +126,7 @@ class ArticleAdmin(admin.ModelAdmin):
         ('Info ', {'fields': [
             'titre',
             'categorie',
-            'tag',
+            'tags',
             'contenu'
         ]
         }),

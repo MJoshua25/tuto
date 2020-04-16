@@ -27,34 +27,21 @@
     <div class="photographi_area">
         <div class="container">
             <div class="row">
+                {% for article in articles %}
                 <div class="col-xl-6 col-md-6">
-                    <div class="single_photography photography_bg_1">
+                    <div class="single_photography" style="background-image: url({{ article.cover.url }});">
                         <div class="info">
                             <div class="info_inner">
-                                <h3><a href="#">Essential Photography: Back <br>
-                                        Button Focus</a></h3>
+                                <h3><a href="{% url 'singleb' article.titre_slug %}">{{ article.titre }}</a></h3>
                                 <div class="date_catagory d-flex align-items-center justify-content-between">
-                                    <span>12 jun 2019</span>
-                                    <span class="catagory">lightroom</span>
+                                    <span>{{ article.date_add }}</span>
+                                    <span class="catagory">{{ article.categorie.titre }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6">
-                    <div class="single_photography photography_bg_2">
-                        <div class="info">
-                            <div class="info_inner">
-                                <h3><a href="#">Think Tank Photo Retrospective <br>
-                                        Shoulder</a></h3>
-                                <div class="date_catagory d-flex align-items-center justify-content-between">
-                                    <span>12 jun 2019</span>
-                                    <span class="catagory">lightroom</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
