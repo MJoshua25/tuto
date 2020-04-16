@@ -111,7 +111,7 @@ class ArticleAdmin(admin.ModelAdmin):
         'date_update'
     )
     list_filter = (
-        'cateorie'
+        'categorie',
         'status',
         'tags'
     )
