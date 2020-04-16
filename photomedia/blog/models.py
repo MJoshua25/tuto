@@ -65,6 +65,8 @@ class Profile(models.Model):
 
 
 class Article(models.Model):
+    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE, related_name='articles')
+    tags = models.ManyToManyField(Tag, related_name='articles')
     titre = models.CharField(max_length=50)
     cover = models.ImageField(upload_to='articles')
     contenu = HTMLField('Content')
@@ -82,12 +84,12 @@ class Article(models.Model):
 
 
 class Commentaire(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='commentaires')
     message = models.TextField()
     nom = models.CharField(max_length=255, null=True, blank=True)
     email = models.EmailField()
     website = models.URLField()
-    pseudo = models.ForeignKey(Profile, on_delete=models.CASCADE, blank=True, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='commentaires' , blank=True, null=True)
 
     status = models.BooleanField(default=True)
     date_add = models.DateTimeField(auto_now_add=True)
@@ -98,4 +100,4 @@ class Commentaire(models.Model):
         verbose_name_plural = "Commentaires"
 
     def __str__(self) -> str:
-        return '{}  -  {}'.format(self.pseudo, self.message)
+        return '{}  -  {}'.format(self.user, self.message)
