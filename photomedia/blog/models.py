@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from tinymce import HTMLField
 
 
 # Create your models here.
@@ -35,13 +36,13 @@ class Tag(models.Model):
     def __str__(self) -> str:
         return str(self.titre)
 
+
 # TODO: article Paul
 
 # TODO: commentaire Daouda, admin Tag
 
 
 class Profile(models.Model):
-    
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     contacts = models.CharField(max_length=30, null=True, blank=True)
     birth_date = models.DateField(null=True)
@@ -63,30 +64,14 @@ class Profile(models.Model):
         return str(self.user.username)
 
 
-
-class Commentaire(models.Model):
-    
-    message=models.CharField(max_length=254)
-    pseudo=models.ForeignKey(Profile,on_delete=models.CASCADE)
-    date_add = models.DateTimeField(auto_now_add=True, null=True, blank=True)
-    status = models.BooleanField(default=True, null=True, blank=True)
-
-
-    class Meta:
-        verbose_name = "Commentaire"
-        verbose_name_plural = "Commentaires"
-
-    def __str__(self) -> str:
-        return '{}  -  {}' .format(self.pseudo,self.message)
-
 class Article(models.Model):
     titre = models.CharField(max_length=50)
     cover = models.ImageField(upload_to='articles')
+    contenu = HTMLField('Content')
+
     status = models.BooleanField(default=True)
     date_add = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now=True)
-    
-
 
     class Meta:
         verbose_name = "Article"
@@ -96,5 +81,21 @@ class Article(models.Model):
         return str(self.titre)
 
 
+class Commentaire(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    message = models.TextField()
+    nom = models.CharField(max_length=255, null=True, blank=True)
+    email = models.EmailField()
+    website = models.URLField()
+    pseudo = models.ForeignKey(Profile, on_delete=models.CASCADE, blank=True, null=True)
 
+    status = models.BooleanField(default=True)
+    date_add = models.DateTimeField(auto_now_add=True)
+    date_update = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = "Commentaire"
+        verbose_name_plural = "Commentaires"
+
+    def __str__(self) -> str:
+        return '{}  -  {}'.format(self.pseudo, self.message)
