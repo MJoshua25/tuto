@@ -8,25 +8,27 @@
                     </div>
                 </div>
                 <div class="col-xl-12">
+                    {% for cat in categ %}
                     <div class="photo_gallery_active owl-carousel">
-                        <div class="single_photo_gallery gallery_bg_1">
+                        <div class="single_photo_gallery gallery_bg_1" style="background-image:url({{categ.cover.url}});">
                             <div class="photo_caption">
-                                <h3>Travel Camping</h3>
+                                <h3>{{cat.titre}}</h3>
                             </div>
                         </div>
-                        <div class="single_photo_gallery gallery_bg_2">
+                    {% endfor %}
+                        <div class="single_photo_gallery gallery_bg_2"  style="background-image:url({{cat.cover.url}});">
                             <div class="photo_caption">
-                                <h3>Travel Camping</h3>
+                                <h3>{{cat.titre}}</h3>
                             </div>
                         </div>
-                        <div class="single_photo_gallery gallery_bg_1">
+                        <div class="single_photo_gallery gallery_bg_1"  style="background-image:url({{cat.cover.url}});">
                             <div class="photo_caption">
-                                <h3>Travel Camping</h3>
+                                <h3>{{cat.titre}}</h3>
                             </div>
                         </div>
-                        <div class="single_photo_gallery gallery_bg_2">
+                        <div class="single_photo_gallery gallery_bg_2" style="background-image:url({{cat.cover.url}});">
                             <div class="photo_caption">
-                                <h3>Travel Camping</h3>
+                                <h3>{{cat.titre}}</h3>
                             </div>
                         </div>
                     </div>

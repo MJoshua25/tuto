@@ -45,6 +45,8 @@ def about(request: HttpRequest) -> HttpResponse:
 def category(request: HttpRequest) -> HttpResponse:
     data = {
 
+        'categ':models.Categorie.objects.filter(status=True)[:].get()
+
     }
     return render(request, 'pages/category.html', data)
 
