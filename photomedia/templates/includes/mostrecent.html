@@ -5,7 +5,6 @@
 <div class="most_recent_blog">
         <div class="container">
             <div class="row">
-              
                 <div class="col-xl-12">
                     <div class="section_title mb-33">
                         <h3>Most Recent</h3>
@@ -13,15 +12,16 @@
                 </div>
                 <div class="col-xl-8 col-md-8">
                     <div class="row">
+                        {% for article in most_recent %}
                         <div class="col-xl-6 col-md-6">
                             <div class="single_blog">
                                 <div class="blog_thumb"  style="background-image: url({{ article.cover.url }});" >
                                     <a href="#">
-                                        <img src="{% static 'img/most_recent/2.jpg'%}" alt="">
+                                        <img src="{{ article.cover.url }}" alt="">
                                     </a>
                                 </div>
                                 <div class="blog_meta">
-                                     
+                                     <h3><a href="{% url 'singleb' article.titre_slug %}">{{ article.titre }}</a></h3>
                                 <div class="date_catagory d-flex align-items-center justify-content-between">
                                     
                                     <span class="catagory">{{ article.categorie.titre }}</span>
@@ -29,8 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                        
-                       
+                        {% endfor %}
                         <div class="col-xl-12">
                             <div class="btn_area text-center">
                                 <a href="#" class="boxed-btn">Load More</a>
@@ -87,7 +86,6 @@
                         </div>
                     </div>
                 </div>
-                 
             </div>
         </div>
     </div>

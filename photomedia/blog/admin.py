@@ -138,6 +138,33 @@ class ArticleAdmin(admin.ModelAdmin):
         return mark_safe('<img src="{url}" width="100px" height="50px" />'.format(url=obj.cover.url))
 
 
+class ContactAdmin(admin.ModelAdmin):
+    list_display = (
+        'nom',
+        'sujet',
+        'email',
+        'status',
+        'date_add',
+    )
+
+    list_filter = (
+        'status',
+    )
+    search_fields = (
+        'sujet',
+    )
+    fieldsets = [
+        ('Info ', {'fields': [
+            'nom',
+            'email',
+            'message',
+            'sujet',
+        ]
+        }),
+        ('Status et Activations', {'fields': ['status', ]}),
+    ]
+
+
 def _register(model, admin_class):
     admin.site.register(model, admin_class)
 
@@ -147,3 +174,4 @@ _register(models.Commentaire, CommentaireAdmin)
 _register(models.Categorie, CategorieAdmin)
 _register(models.Tag, TagAdmin)
 _register(models.Profile, ProfileAdmin)
+_register(models.Contact, ContactAdmin)
