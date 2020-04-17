@@ -5,7 +5,7 @@
 <div class="most_recent_blog">
         <div class="container">
             <div class="row">
-              {% for article in articles %}
+              
                 <div class="col-xl-12">
                     <div class="section_title mb-33">
                         <h3>Most Recent</h3>
@@ -21,7 +21,7 @@
                                     </a>
                                 </div>
                                 <div class="blog_meta">
-                                     <h3><a href="{% url 'singleb' article.titre_slug %}">{{ article.titre }}</a></h3>
+                                     
                                 <div class="date_catagory d-flex align-items-center justify-content-between">
                                     
                                     <span class="catagory">{{ article.categorie.titre }}</span>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                 {% endfor %} 
+                 
             </div>
         </div>
     </div>
