@@ -30,10 +30,24 @@ def single(request: HttpRequest, titre_slug: str) -> HttpResponse:
 
 
 def contact(request: HttpRequest) -> HttpResponse:
-    data = {
+    if request.method == 'POST':
+        nom = request.POST.get('name')
+        email = request.POST.get('email')
+        sujet = request.POST.get('subject')
+        message = request.POST.get('message')
+        c = models.Contact(
+            nom=nom,
+            email=email,
+            sujet=sujet,
+            message=message
+        )
+        c.save()
+        return redirect('contact')
+    else:
+        data = {
 
-    }
-    return render(request, 'pages/contact.html', data)
+        }
+        return render(request, 'pages/contact.html', data)
 
 
 def about(request: HttpRequest) -> HttpResponse:
