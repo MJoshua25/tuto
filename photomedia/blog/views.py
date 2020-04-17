@@ -11,8 +11,10 @@ from . import models
 # Create your views here.
 
 def index(request: HttpRequest) -> HttpResponse:
+
     data = {
-        'articles': models.Article.objects.filter(status=True).order_by('-date_add')[:2]
+        'articles': models.Article.objects.filter(status=True).order_by('-date_add')[:2],
+        'most_recent': models.Article.objects.filter(status=True).order_by('-date_add')[:6]
     }
     return render(request, 'pages/index.html', data)
 
