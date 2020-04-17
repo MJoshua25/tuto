@@ -112,3 +112,21 @@ class Commentaire(models.Model):
 
     def __str__(self) -> str:
         return '{}  -  {}'.format(self.user, self.message)
+
+
+class Contact(models.Model):
+    message = models.TextField()
+    nom = models.CharField(max_length=255)
+    email = models.EmailField()
+    sujet = models.CharField(max_length=255)
+
+    status = models.BooleanField(default=True)
+    date_add = models.DateTimeField(auto_now_add=True)
+    date_update = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "Contact"
+        verbose_name_plural = "Contacts"
+
+    def __str__(self) -> str:
+        return '{}  -  {}'.format(self.nom, self.message)

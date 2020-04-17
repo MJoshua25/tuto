@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f985dc42-277c-4094-8b03-84f293c9c3ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photomedia/templates/includes/mostrecent.html" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/templates/includes/mostrecent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photomedia/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photomedia/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/photomedia/blog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587134851941</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Avancé dans le Tuto">
+      <created>1587135834026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587135834026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,37 +174,49 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="84" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586030063951" />
-    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1587134850361">
+    <state x="423" y="0" key="CommitChangelistDialog2" timestamp="1587135832505">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587134850361" />
+    <state x="423" y="0" key="CommitChangelistDialog2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135832505" />
     <state x="580" y="171" key="FileChooserDialogImpl" timestamp="1586028246220">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="171" key="FileChooserDialogImpl/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586028246220" />
-    <state width="1557" height="216" key="GridCell.Tab.0.bottom" timestamp="1587135181928">
+    <state width="1557" height="216" key="GridCell.Tab.0.bottom" timestamp="1587136426110">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="216" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135181928" />
-    <state width="1557" height="216" key="GridCell.Tab.0.center" timestamp="1587135181928">
+    <state width="1557" height="216" key="GridCell.Tab.0.bottom/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587136426110" />
+    <state width="1557" height="216" key="GridCell.Tab.0.center" timestamp="1587136426110">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="216" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135181928" />
-    <state width="1557" height="216" key="GridCell.Tab.0.left" timestamp="1587135181927">
+    <state width="1557" height="216" key="GridCell.Tab.0.center/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587136426110" />
+    <state width="1557" height="216" key="GridCell.Tab.0.left" timestamp="1587136426110">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="216" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135181927" />
-    <state width="1557" height="216" key="GridCell.Tab.0.right" timestamp="1587135181928">
+    <state width="1557" height="216" key="GridCell.Tab.0.left/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587136426110" />
+    <state width="1557" height="216" key="GridCell.Tab.0.right" timestamp="1587136426110">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="216" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135181928" />
+    <state width="1557" height="216" key="GridCell.Tab.0.right/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587136426110" />
+    <state x="227" y="67" key="MergeDialog" timestamp="1587135932151">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="227" y="67" key="MergeDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135932151" />
+    <state x="680" y="295" width="389" height="269" key="MultipleFileMergeDialog" timestamp="1587135932164">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="680" y="295" width="389" height="269" key="MultipleFileMergeDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135932164" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1586028290390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="72" key="SettingsEditor/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1586028290390" />
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1587049915985">
+    <state x="587" y="63" key="VCS.ChangeListViewerDialog" timestamp="1587135846005">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="158" key="Vcs.Push.Dialog.v2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587049915985" />
+    <state x="587" y="63" key="VCS.ChangeListViewerDialog/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135846005" />
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2" timestamp="1587135858875">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="158" key="Vcs.Push.Dialog.v2/1600.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1587135858875" />
   </component>
 </project>
