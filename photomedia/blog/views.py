@@ -44,6 +44,7 @@ def about(request: HttpRequest) -> HttpResponse:
 
 def category(request: HttpRequest) -> HttpResponse:
     data = {
+        
 
     }
     return render(request, 'pages/category.html', data)

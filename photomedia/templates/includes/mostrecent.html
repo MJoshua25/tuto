@@ -1,8 +1,11 @@
 {% load static %}
 
+ {% block content %}
+
 <div class="most_recent_blog">
         <div class="container">
             <div class="row">
+              {% for article in articles %}
                 <div class="col-xl-12">
                     <div class="section_title mb-33">
                         <h3>Most Recent</h3>
@@ -12,99 +15,22 @@
                     <div class="row">
                         <div class="col-xl-6 col-md-6">
                             <div class="single_blog">
-                                <div class="blog_thumb">
+                                <div class="blog_thumb"  style="background-image: url({{ article.cover.url }});" >
                                     <a href="#">
                                         <img src="{% static 'img/most_recent/2.jpg'%}" alt="">
                                     </a>
                                 </div>
                                 <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            The Desolate Beauty of <br>
-                                            Greenland
-                                        </a></h3>
+                                     <h3><a href="{% url 'singleb' article.titre_slug %}">{{ article.titre }}</a></h3>
+                                <div class="date_catagory d-flex align-items-center justify-content-between">
+                                    
+                                    <span class="catagory">{{ article.categorie.titre }}</span>
+                                </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="single_blog">
-                                <div class="blog_thumb">
-                                    <a href="#">
-                                        <img src="{% static 'img/most_recent/1.jpg'%}" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            Lost Is Just a Four Letter <br>
-                                            Word
-                                        </a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="single_blog">
-                                <div class="blog_thumb">
-                                    <a href="#">
-                                        <img src="{% static 'img/most_recent/3.jpg'%}" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            Break through Photo-graphy <br>
-                                            Filters for Travel Shot
-                                        </a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="single_blog">
-                                <div class="blog_thumb">
-                                    <a href="#">
-                                        <img src="{% static 'img/most_recent/4.jpg'%}" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            Tank Releases New Photo <br>
-                                            Protection Concepts
-                                        </a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="single_blog">
-                                <div class="blog_thumb">
-                                    <a href="#">
-                                        <img src="{% static 'img/most_recent/5.jpg'%}" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            The Desolate Beauty of <br>
-                                            Greenland
-                                        </a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6">
-                            <div class="single_blog">
-                                <div class="blog_thumb">
-                                    <a href="#">
-                                        <img src="{% static 'img/most_recent/6.jpg'%}" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog_meta">
-                                    <p><a href="#">Photography I 24 May 2019</a></p>
-                                    <h3><a href="#">
-                                            Lost Is Just a Four Letter <br> Word
-                                        </a></h3>
-                                </div>
-                            </div>
-                        </div>
+                        
+                       
                         <div class="col-xl-12">
                             <div class="btn_area text-center">
                                 <a href="#" class="boxed-btn">Load More</a>
@@ -161,6 +87,9 @@
                         </div>
                     </div>
                 </div>
+                 {% endfor %} 
             </div>
         </div>
     </div>
+
+    {% endblock content %}
